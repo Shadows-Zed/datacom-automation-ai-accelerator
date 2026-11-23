@@ -4,6 +4,7 @@
   <a href="README.md">English</a> | <strong>简体中文</strong>
 </p>
 
+[![CI](https://github.com/Shadows-Zed/datacom-automation-ai-accelerator/actions/workflows/ci.yml/badge.svg)](https://github.com/Shadows-Zed/datacom-automation-ai-accelerator/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)
 ![Dependencies](https://img.shields.io/badge/运行时依赖-零第三方依赖%20(Stdlib)-059669)
 ![Tests](https://img.shields.io/badge/自动化测试-24%2F24%20通过-16A34A)
