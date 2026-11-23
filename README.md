@@ -15,11 +15,15 @@ End-to-end engineering portfolio for the **Datacom Automation AI Accelerator** v
 
 ```mermaid
 flowchart LR
-    T1["Task 1 · Pilot\nAI-Powered Debugging &\nPerformance Refactoring\n(16 Tests · 152.5x Lookup)"]
-    T2["Task 2 · Architect\nSpec-Driven Full-Stack\nKudos Portal + Moderation\n(SQLite · REST · RBAC · SPA)"]
-    T3["Task 3 · Strategic Partner\nOrderBot Autonomous AI\nAgent Architecture\n(3-Slide Executive Deck)"]
+    T1["<b>Task 1 · Pilot</b><br/>AI-Powered Debugging & Refactoring<br/>16 Tests · 3.47x Metrics · 152.5x Lookup"]
+    T2["<b>Task 2 · Architect</b><br/>Spec-Driven Full-Stack Kudos Portal<br/>SQLite · REST · RBAC · Audit Log"]
+    T3["<b>Task 3 · Strategic Partner</b><br/>OrderBot Autonomous AI Agent<br/>3-Slide Pitch · Read-Only PoC"]
 
     T1 --> T2 --> T3
+
+    style T1 fill:#EFF6FF,stroke:#0057B8,stroke-width:2px,color:#0A2540
+    style T2 fill:#F0FDF4,stroke:#059669,stroke-width:2px,color:#064E3B
+    style T3 fill:#0A2540,stroke:#0057B8,stroke-width:2px,color:#FFFFFF
 ```
 
 ---

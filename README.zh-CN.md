@@ -15,11 +15,15 @@
 
 ```mermaid
 flowchart LR
-    T1["Task 1 · Pilot\nAI 驱动调试与性能重构\n(16 项测试 · 最高提速 152.5x)"]
-    T2["Task 2 · Architect\n规范驱动全栈 Kudos 门户\n(SQLite · REST · RBAC · 审核审计)"]
-    T3["Task 3 · Strategic Partner\nOrderBot 自主智能体方案\n(3 页高管汇报矢量 Deck)"]
+    T1["<b>Task 1 · Pilot</b><br/>AI 驱动调试与性能重构<br/>16 项测试 · 最高提速 152.5x"]
+    T2["<b>Task 2 · Architect</b><br/>规范驱动全栈 Kudos 门户<br/>SQLite · REST · RBAC · 审核审计"]
+    T3["<b>Task 3 · Strategic Partner</b><br/>OrderBot 自主智能体方案<br/>3 页高管汇报 · 只读 PoC"]
 
     T1 --> T2 --> T3
+
+    style T1 fill:#EFF6FF,stroke:#0057B8,stroke-width:2px,color:#0A2540
+    style T2 fill:#F0FDF4,stroke:#059669,stroke-width:2px,color:#064E3B
+    style T3 fill:#0A2540,stroke:#0057B8,stroke-width:2px,color:#FFFFFF
 ```
 
 ---
