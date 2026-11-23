@@ -10,6 +10,10 @@ An internal employee peer-recognition ("Kudos") web application built from scrat
 - **Admin Content Moderation:** Administrators can **hide** (`is_visible = false`), **restore**, or **permanently delete** inappropriate kudos with mandatory moderation reasons and an immutable `moderation_audit_log`.
 - **Abuse & Security Protections:** Self-kudos prevention, 5-minute duplicate guard (`409 Conflict`), per-user spam rate limiting (`429 Too Many Requests`), HTML angle-bracket neutralization + DOM `textContent` rendering against XSS, and parameterized SQLite queries.
 
+## Live UI Preview
+
+![Datacom Kudos Portal UI](../assets/kudos_portal_ui.png)
+
 ## Quick Start (Zero External Dependencies)
 
 Requires Python 3.10+.
