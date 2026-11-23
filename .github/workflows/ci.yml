@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Run Task 1 unit & SLA tests (16 tests)
+        working-directory: task1-ai-debugging-refactoring
+        run: python -m unittest -v TEST_CASES.py
+
+      - name: Run Task 2 end-to-end Kudos API & moderation tests (8 tests)
+        working-directory: task2-kudos-spec-driven-app
+        run: python -m unittest -v test_kudos.py
+
+      - name: Verify Task 3 slide generator syntax
+        working-directory: task3-orderbot-agentic-proposal
+        run: python -m py_compile build_slides_pdf.py
